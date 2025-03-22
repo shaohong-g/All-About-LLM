@@ -1,0 +1,12 @@
+ipykernel
+ipywidgets
+python-dotenv
+pandas
+openai
+scipy
+plotly-express
+scikit-learn
+umap-learn
+tiktoken
+sentence-transformers
+# beautifulsoup4
