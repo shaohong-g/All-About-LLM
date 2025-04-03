@@ -2,9 +2,10 @@
 
 0. Embeddings
 1. Retrieval-Augmented Generation (RAG)
-2. OpenAi
-3. AI agents
-4. The Model Context Protocol (MCP)
+2. LLMs: Gemini (OpenAi - not free)
+3. AI agents, LangChain, LangGraph
+4. LLM with Knowledge graph
+5. The Model Context Protocol (MCP)
 
 ## Environment
 ```sh
@@ -37,3 +38,7 @@ pip install -r requirements.txt
 - [Sentence Transformer](https://www.sbert.net/examples/applications/computing-embeddings/README.html)
 - [Tiktoken](https://github.com/openai/tiktoken/tree/main?tab=readme-ov-file)
 - [Openai Embedding Models](https://platform.openai.com/docs/guides/embeddings#embedding-models)
+- [Gemini Embedding](https://ai.google.dev/gemini-api/docs/embeddings)
+- [Reduce document embedding dimension](https://stackoverflow.com/questions/53883945/how-to-reduce-the-dimension-of-the-document-embedding)
+
+https://github.com/google/generative-ai-docs/blob/main/site/en/gemini-api/tutorials/document_search.ipynb

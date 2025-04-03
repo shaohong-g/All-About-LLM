@@ -175,3 +175,4 @@ cython_debug/
 
 # Others
 data/**/*
+!data/sentiment_embeddings.pkl
