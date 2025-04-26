@@ -1,6 +1,6 @@
 # All-About-LLM
 
-0. Embeddings
+0. Embeddings - [here](./embedding.ipynb)
 1. Retrieval-Augmented Generation (RAG)
 2. LLMs: Gemini (OpenAi - not free)
 3. AI agents, LangChain, LangGraph
@@ -14,12 +14,38 @@ python -m venv .venv
 
 # Activate virtual environment (Windows)
 .venv\Scripts\activate.bat
+
+# Activate virtual environment (Mac)
+source .venv/bin/activate
 ```
 
 ## Pre-requisite
 ```sh
 pip install -r requirements.txt
 ```
+
+## Quick Start
+1. PgVector
+    - Initialize docker containers
+    ```sh
+    # Start Docker Service (detached)
+    docker compose -f pgvector.yml up -d
+    # End/Stop Docker Service
+    docker compose -f pgvector.yml down -v
+    docker compose -f pgvector.yml stop
+
+    # Access container
+    docker exec -it <container name> bash
+    psql -U <POSTGRES_USER> <POSTGRES_DB>
+    ```
+    - Add server in PgAdmin (localhost:PORT)
+        1. Under `Object` tab -> `Register` -> `Server`
+        2. Fill in the followings:
+            - `General` -> `Name` : <any name that you want>
+            - `Connection` -> `Host name/address` : <db container name - pgvector-db>
+            - `Connection` -> `Port` & `Username` & `Password`
+
+
 
 ## Tools
 - [Tiktokenizer](https://tiktokenizer.vercel.app/)
