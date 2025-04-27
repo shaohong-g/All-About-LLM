@@ -12,3 +12,6 @@ sentence-transformers
 google-genai
 matplotlib
 # beautifulsoup4
+psycopg2-binary
+pgvector
+faiss-cpu

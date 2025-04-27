@@ -67,4 +67,29 @@ pip install -r requirements.txt
 - [Gemini Embedding](https://ai.google.dev/gemini-api/docs/embeddings)
 - [Reduce document embedding dimension](https://stackoverflow.com/questions/53883945/how-to-reduce-the-dimension-of-the-document-embedding)
 
+## RAG
+- [Pgvector tutorial](https://www.datacamp.com/tutorial/pgvector-tutorial)
+    - IVFFlat (Inverted File Flat) 
+    ```sql
+    CREATE INDEX ON items USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
+    /*
+    CREATE INDEX ON items: Starts the creation of an index on the items table.
+    USING ivfflat: Specifies the use of the ivfflat indexing method, suitable for approximate nearest neighbor searches.
+    (embedding vector_cosine_ops): Targets the embedding column and uses vector_cosine_ops for cosine similarity operations.
+    WITH (lists = 100): Configures the index with 100 partition lists, balancing search speed and memory usage.
+    */
+    ```
+    - HNSW (Hierarchical Navigable Small World) index
+    ```sql
+    CREATE INDEX ON items USING hnsw (embedding vector_l2_ops) WITH (m = 16, ef_construction = 64);
+    /*
+    CREATE INDEX ON items: Creates an index on the items table.
+    USING hnsw: Specifies the use of the HNSW (Hierarchical Navigable Small World) algorithm for the index.
+    (embedding vector_l2_ops): Targets the embedding column and uses vector_l2_ops for distance calculations.
+    WITH (m = 16, ef_construction = 64): Sets parameters for the HNSW algorithm; m is the number of bi-directional links, ef_construction is the size of the dynamic list during index construction.
+    */
+    ```
+- [Vector with different dimension](https://github.com/pgvector/pgvector/issues/426)
+- [Faiss Tutorial](https://www.pinecone.io/learn/series/faiss/faiss-tutorial/)
+
 https://github.com/google/generative-ai-docs/blob/main/site/en/gemini-api/tutorials/document_search.ipynb
