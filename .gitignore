@@ -177,3 +177,5 @@ cython_debug/
 data/**/*
 !data/sentiment_embeddings.pkl
 .DS_Store
+!data/sample.json
+!data/my_resume.pdf

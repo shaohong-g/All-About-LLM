@@ -15,3 +15,5 @@ matplotlib
 psycopg2-binary
 pgvector
 faiss-cpu
+llama-index-llms-azure-openai
+llama-index

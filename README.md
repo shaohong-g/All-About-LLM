@@ -1,11 +1,12 @@
 # All-About-LLM
 
 0. Embeddings - [here](./embedding.ipynb)
-1. Retrieval-Augmented Generation (RAG)
+1. Vector Store (PgVector, FAISS) - [here](./vectorstore.ipynb)
 2. LLMs: Gemini (OpenAi - not free)
-3. AI agents, LangChain, LangGraph
-4. LLM with Knowledge graph
-5. The Model Context Protocol (MCP)
+3. Retrieval-Augmented Generation (RAG - llamaIndex)
+4. AI agents, LangChain, LangGraph
+5. LLM with Knowledge graph
+6. The Model Context Protocol (MCP)
 
 ## Environment
 ```sh
@@ -91,5 +92,6 @@ pip install -r requirements.txt
     ```
 - [Vector with different dimension](https://github.com/pgvector/pgvector/issues/426)
 - [Faiss Tutorial](https://www.pinecone.io/learn/series/faiss/faiss-tutorial/)
+- [llamaIndex Components](https://docs.llamaindex.ai/en/stable/module_guides/models/llms/modules/)
 
 https://github.com/google/generative-ai-docs/blob/main/site/en/gemini-api/tutorials/document_search.ipynb
