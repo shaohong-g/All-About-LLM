@@ -2,7 +2,7 @@
 
 0. Embeddings - [here](./embedding.ipynb)
 1. Vector Store (PgVector, FAISS) - [here](./vectorstore.ipynb)
-2. LLMs: Gemini (OpenAi - not free)
+2. LLMs: Gemini (OpenAi - not free) - [here](./llm.ipynb)
 3. Retrieval-Augmented Generation (RAG - llamaIndex)
 4. AI agents, LangChain, LangGraph
 5. LLM with Knowledge graph
