@@ -17,3 +17,5 @@ pgvector
 faiss-cpu
 llama-index-llms-azure-openai
 llama-index
+llama-index-embeddings-azure-openai
+llama-index-vector-stores-faiss

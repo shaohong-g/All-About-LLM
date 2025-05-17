@@ -179,3 +179,4 @@ data/**/*
 .DS_Store
 !data/sample.json
 !data/my_resume.pdf
+storage
