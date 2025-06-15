@@ -180,3 +180,6 @@ data/**/*
 !data/sample.json
 !data/my_resume.pdf
 storage
+storage_row_doc/
+storage_row_node/
+storage_row_text/
